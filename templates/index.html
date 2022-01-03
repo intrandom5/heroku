@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>대문 페이지</h1>
+    <p class="info">이름 : {{user}}</p>
+    <p class="info">모델 : {{data.model}}</p>
+    <p class="info">음성 : {{data.wav}}</p>
+    <p class="info">결과 : {{data.script}}</p>
+
+    <form action="/" method="post">
+        파일 이름 : <input type="text" name="wav">
+        <input type="submit" value="분석하기">
+    </form>
+</body>
+</html>

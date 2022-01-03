@@ -1,0 +1,23 @@
+data:
+	data_directory: "dataset_directory"
+	csv_path: "data/train.csv"
+	json_path: "data/labels.json"
+train:
+	# continue from last saved model
+	CONTINUE: False
+	# saved model path
+	MODEL_PATH: "model/model.pth"
+	progress_states_path: "model/progress.pickle"
+	# train augmentation settings.(SPEC_AUG, NOISE_INJECT)
+	SPEC_AUG: True
+	NOISE_INJECT: False
+	BATCH_SIZE: 8
+	EPOCHS: 10
+audio:
+	sample_rate: 16000
+	window_size: .02
+	window_stride: .01
+	window: 'hamming'
+evaluate:
+	test_csv_path: "data/test.csv"
+	BATCH_SIZE: 32

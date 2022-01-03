@@ -1,0 +1,15 @@
+1. prepare dataset
+- dataset should be like this form
+folder/
+    xxx1.wav
+    xxx1.txt
+    xxx2.wav
+    xxx2.txt
+    ....
+    
+2. A_data_preprocess.py
+3. A_train.py
+4. A_evaluate.py
+5. A_decode.py
+
+* you can set the config in "config.yaml" file.

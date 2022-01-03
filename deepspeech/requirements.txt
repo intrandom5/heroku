@@ -1,0 +1,15 @@
+scipy
+numpy
+soundfile
+python-levenshtein
+torchelastic
+visdom
+wget
+librosa
+tqdm
+matplotlib
+flask
+sox
+sklearn
+soundfile
+hydra-core --pre
